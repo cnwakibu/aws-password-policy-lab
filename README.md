@@ -1,2 +1,36 @@
-# aws-password-policy-lab
-Automated AWS password policy check using Python, with audit-ready JSON/CSV evidence aligned to SOC 2 &amp; NIST 800-53 standards.
+# AWS Password Policy Lab 🔐
+
+## Problem
+Organizations need strong password policies to protect accounts and meet compliance standards (SOC 2 CC6.6, NIST 800-53 IA-5).
+
+## Solution
+I ran a Python script to audit my AWS IAM password policies.  
+The script checked:
+- Password length  
+- Complexity requirements  
+- Reuse restrictions  
+- Minimum & maximum password age  
+
+It automatically generated JSON and CSV reports with results.
+
+## Results
+❌ First run = 0% compliance (IAM user didn’t have permissions)  
+✅ After fixing permissions, compliance score + recommendations displayed  
+
+## Evidence
+- JSON report (`/evidence/password-policy-report.json`)  
+- CSV report (`/evidence/password-policy-report.csv`)  
+- Screenshot of compliance score  
+
+## Key Takeaway
+Compliance isn’t just checklists — it can be automated, measurable, and audit-ready.  
+
+## Framework Tie-In
+- **SOC 2 CC6.6** — Logical access security measures  
+- **NIST 800-53 IA-5** — Authenticator management  
+
+## Next Steps
+- Extend script to check for password expiration policy  
+- Integrate results into AWS Config for continuous compliance  
+
+
