@@ -33,4 +33,7 @@ Compliance isn’t just checklists — it can be automated, measurable, and audi
 - Extend script to check for password expiration policy  
 - Integrate results into AWS Config for continuous compliance  
 
+## Attribution
+The Python script in the `/scripts` folder was originally provided by AJ Yawn for educational purposes.  
+I used it to run the compliance check, generate evidence and document results as part of my hands-on learning.
 
